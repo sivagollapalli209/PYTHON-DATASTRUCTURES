@@ -1,0 +1,9 @@
+def fabonacci(n):
+	assert n>=0 and int(n)==n,'only possible for intergers'
+	if n in [0,1]:
+		return n
+	else:
+		return fabonacci(n-1)+fabonacci(n-2)
+n=int(input())		
+print(fabonacci(n))
+			
